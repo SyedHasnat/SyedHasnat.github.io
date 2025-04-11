@@ -4,115 +4,157 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Syed Muhammad Hasanat – Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background: #f5f5f5;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #f0f4f8, #dbeafe);
       color: #333;
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
+      margin: 0;
+      padding: 0;
     }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
     h1, h2 {
-      color: #0a3d62;
+      color: #1e3a8a;
     }
+
     a {
-      color: #0c2461;
+      color: #1d4ed8;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
     .section {
-      margin-bottom: 40px;
+      background: #ffffffdd;
+      padding: 25px;
+      margin-bottom: 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+      transition: transform 0.3s ease;
     }
+
+    .section:hover {
+      transform: translateY(-5px);
+    }
+
     ul {
       padding-left: 20px;
+    }
+
+    .icons a {
+      font-size: 1.5rem;
+      margin-right: 15px;
+      color: #1e40af;
+    }
+
+    .icons a:hover {
+      color: #2563eb;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media screen and (max-width: 600px) {
+      .icons a {
+        font-size: 1.2rem;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Syed Muhammad Hasanat</h1>
-  <p><strong>MS Electrical Energy Systems | Deep Learning Researcher | Smart Grid Specialist</strong></p>
-  <p>
-    📍 Syed Abad Rustam, District Mardan, Pakistan<br>
-    📧 <a href="mailto:eng.syed.its@gmail.com">eng.syed.its@gmail.com</a> | <a href="mailto:18ktele@uetpeshawar.edu.pk">18ktele@uetpeshawar.edu.pk</a><br>
-    🔗 <a href="https://github.com/SyedHasnat" target="_blank">GitHub</a> |
-    <a href="https://linkedin.com/in/syed-muhammad-hasanat-a56562204/" target="_blank">LinkedIn</a> |
-    <a href="https://orcid.org/0009-0006-6846-5893" target="_blank">ORCID</a>
-  </p>
+  <div class="container">
+    <h1>Syed Muhammad Hasanat</h1>
+    <p><strong>MS Electrical Energy Systems | Deep Learning Researcher | Smart Grid Specialist</strong></p>
 
-  <div class="section">
-    <h2>Research Interests</h2>
-    <ul>
-      <li>Short-Term Load Forecasting (STLF)</li>
-      <li>Smart Grids & Renewable Integration</li>
-      <li>Deep Learning, CNN-LSTM, GRU, Attention Models</li>
-      <li>Energy Forecasting & Management</li>
-      <li>Reinforcement Learning & AI Applications in Power Systems</li>
-    </ul>
-  </div>
+    <div class="icons">
+      <a href="mailto:eng.syed.its@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/SyedHasnat" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/syed-muhammad-hasanat-a56562204/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://orcid.org/0009-0006-6846-5893" target="_blank" title="ORCID"><i class="fas fa-id-badge"></i></a>
+    </div>
 
-  <div class="section">
-    <h2>Education</h2>
-    <p><strong>MS in Electrical Energy Systems</strong>, UET Peshawar (Fall 2023)</p>
-    <p>Thesis: Enhancing Short Term Load Forecasting Through Deep Hybrid Attention Networks</p>
+    <div class="section">
+      <h2>Research Interests</h2>
+      <ul>
+        <li>Short-Term Load Forecasting (STLF)</li>
+        <li>Smart Grids & Renewable Integration</li>
+        <li>Deep Learning, CNN-LSTM, GRU, Attention Models</li>
+        <li>Energy Forecasting & Management</li>
+        <li>Reinforcement Learning & AI Applications in Power Systems</li>
+      </ul>
+    </div>
 
-    <p><strong>BS in Electrical Engineering</strong>, UET Peshawar (2018–2022)</p>
-    <p>Thesis: Short Term Load Forecasting In Smart Grid Using Deep Hybrid Model</p>
-  </div>
+    <div class="section">
+      <h2>Education</h2>
+      <p><strong>MS in Electrical Energy Systems</strong>, UET Peshawar (Fall 2023)</p>
+      <p>Thesis: Enhancing Short Term Load Forecasting Through Deep Hybrid Attention Networks</p>
+      <p><strong>BS in Electrical Engineering</strong>, UET Peshawar (2018–2022)</p>
+      <p>Thesis: Short Term Load Forecasting In Smart Grid Using Deep Hybrid Model</p>
+    </div>
 
-  <div class="section">
-    <h2>Selected Publications</h2>
-    <ul>
-      <li>Hybrid LSTM & Multichannel Network – <em>Engineering Applications of AI, 2025</em></li>
-      <li>Parallel 1D CNN + Bi-LSTM – <em>Int. Journal of Energy Research, 2024</em></li>
-      <li>CNN-GRU Hybrid Model – <em>IEEE Access, 2024</em></li>
-      <li>STLF Review with CNN-LSTM – <em>IEEE Access, 2024</em></li>
-      <li>LSTM + Modified Split Convolution – <em>PeerJ CS, 2023</em></li>
-    </ul>
-  </div>
+    <div class="section">
+      <h2>Selected Publications</h2>
+      <ul>
+        <li><em>Hybrid LSTM & Multichannel Network</em> – Engineering Applications of AI, 2025</li>
+        <li><em>Parallel 1D CNN + Bi-LSTM</em> – Int. Journal of Energy Research, 2024</li>
+        <li><em>CNN-GRU Hybrid Model</em> – IEEE Access, 2024</li>
+        <li><em>STLF Review with CNN-LSTM</em> – IEEE Access, 2024</li>
+        <li><em>LSTM + Modified Split Convolution</em> – PeerJ CS, 2023</li>
+      </ul>
+    </div>
 
-  <div class="section">
-    <h2>Work Experience</h2>
-    <p><strong>Research Intern, NUTECH</strong> – Smart Precision Agriculture (Oct–Nov 2023)</p>
-    <p><strong>Teaching Assistant, UET Kohat Campus</strong> – Courses: EE170 & EE271 (2021–2022)</p>
-  </div>
+    <div class="section">
+      <h2>Experience</h2>
+      <p><strong>Research Intern, NUTECH</strong> – AI-based Precision Agriculture (Oct–Nov 2023)</p>
+      <p><strong>Teaching Assistant, UET Kohat Campus</strong> – EE170 & EE271 (2021–2022)</p>
+    </div>
 
-  <div class="section">
-    <h2>Freelance Projects</h2>
-    <ul>
-      <li>PV Generation Forecasting – Client in Qatar</li>
-      <li>Malaysian Load Forecasting – Client in Malaysia</li>
-      <li>Hand Sign Recognition – Client in Switzerland</li>
-      <li>Airline Services Data Analysis – Client in Switzerland</li>
-    </ul>
-  </div>
+    <div class="section">
+      <h2>Freelance Projects</h2>
+      <ul>
+        <li>PV Generation Forecasting – Client in Qatar</li>
+        <li>Malaysian Load Forecasting – Client in Malaysia</li>
+        <li>Hand Sign Recognition – Client in Switzerland</li>
+        <li>Airline Services Data Analysis – Client in Switzerland</li>
+      </ul>
+    </div>
 
-  <div class="section">
-    <h2>Skills & Tools</h2>
-    <ul>
-      <li><strong>Programming:</strong> Python, C++, Embedded C</li>
-      <li><strong>ML/DL:</strong> TensorFlow, Keras, PyTorch, Scikit-learn</li>
-      <li><strong>Simulation:</strong> MATLAB, Simulink, PVsyst, HomerPro</li>
-      <li><strong>Paper/Design:</strong> LaTeX, OriginPro, Visio</li>
-    </ul>
-  </div>
+    <div class="section">
+      <h2>Skills & Tools</h2>
+      <ul>
+        <li><strong>Languages:</strong> Python, C++, Embedded C</li>
+        <li><strong>Frameworks:</strong> TensorFlow, Keras, PyTorch, Scikit-learn</li>
+        <li><strong>Simulation:</strong> MATLAB, Simulink, PVsyst, HomerPro</li>
+        <li><strong>Documentation:</strong> LaTeX, OriginPro, Visio</li>
+      </ul>
+    </div>
 
-  <div class="section">
-    <h2>Online Learning & Certifications</h2>
-    <ul>
-      <li>Machine Learning by Andrew Ng – Stanford</li>
-      <li>Deep Reinforcement Learning – Udacity, DeepMind</li>
-      <li>Computer Vision – CS231n (Stanford)</li>
-      <li>MITx Courses – Linear Algebra, Statistics, Data Science</li>
-    </ul>
-  </div>
+    <div class="section">
+      <h2>Online Learning</h2>
+      <ul>
+        <li>ML & DL Specialization – Stanford (Andrew Ng)</li>
+        <li>Reinforcement Learning – Udacity, DeepMind</li>
+        <li>Computer Vision – CS231n</li>
+        <li>MITx – Linear Algebra, Statistics, Data Science</li>
+      </ul>
+    </div>
 
-  <div class="section">
-    <h2>Let’s Connect</h2>
-    <p>If you're interested in collaboration, have questions about my research, or need help with smart energy systems and deep learning, feel free to reach out.</p>
+    <div class="section">
+      <h2>Let’s Connect</h2>
+      <p>If you’re interested in collaboration or want to talk about smart energy systems and AI, feel free to reach out!</p>
+    </div>
   </div>
 </body>
 </html>
